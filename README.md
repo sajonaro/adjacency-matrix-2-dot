@@ -3,22 +3,22 @@ This application converts an adjacency matrix into .dot file (from graphviz suit
 Undirected and directed graphs are supported. Check examples below.
 
 
-links: 
-https://en.wikipedia.org/wiki/Adjacency_matrix
-http://www.graphviz.org/
+links: <br>
+https://en.wikipedia.org/wiki/Adjacency_matrix  <br>
+http://www.graphviz.org/  <br>
 
-dependencies (see deps.edn for details):
-clojar: net.mikera/core.matrix 
+dependencies (see deps.edn for details): <br>
+clojar: net.mikera/core.matrix  <br>
 
 
-== examples ==
+== examples == <br>
 == ex1 ==
 
 A matrix:
 
-[[ 1 0  1]
- [ 0 1  0]
- [ 1 0  1]]
+[[ 1 0  1] <br>
+ [ 0 1  0] <br>
+ [ 1 0  1]]<br>
 
 should be represented as:
 
@@ -31,9 +31,9 @@ graph ex1{
 
 == ex2 ==
 
-[[ 0  1  0]
- [ 0  0  1]
- [ 0  0  0]]
+[[ 0  1  0] <br>
+ [ 0  0  1] <br>
+ [ 0  0  0]]<br>
 
 
 should be represented as:
