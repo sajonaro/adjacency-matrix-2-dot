@@ -1,0 +1,21 @@
+/*
+
+by convention, rows represent
+vertices of the graph, labeled V1.. VN
+
+Therefore, an adjacency matrix
+(https://en.wikipedia.org/wiki/Adjacency_matrix):
+
+[[ 1 0  1]
+ [ 0 1  0]
+ [ 1 0  1]]
+
+
+could be represented as:
+*/
+
+graph ex1{
+  v1 -- v1 -- v3 ;
+  v2 -- v2 ;
+  v3 -- v3 ;
+}
