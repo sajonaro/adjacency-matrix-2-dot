@@ -13,4 +13,5 @@ pom.xml.asc
 .nrepl-port
 .cpcache/
 .rebel-repl-history
-.clj-*
+.clj-*/
+.lsp/
