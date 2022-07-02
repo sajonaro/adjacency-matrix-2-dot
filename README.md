@@ -45,10 +45,19 @@ digraph ex1{<br>
 == end of ex2 ==
 
 
-useful commands 
+useful commands<br>
 
-1) to generate svg out of Dot file use dot utility from graphviz suite as follows:<br>
+to generate svg out of Dot file use dot utility from graphviz suite as follows:<br>
 cd examples && dot -Tsvg ex1.dot > ex1.svg<br>
 
-2) to run application from command line use clj with alias :run defined in deps.edn as follows:<br>
+to run application from command (without compiling)line use clj with alias :run defined in deps.edn as follows:<br>
 clj -X:run<br>
+
+to build uber.jar: <br>
+ clj -X:build   (NB, default exec-fn defined in :build alias is uber)
+
+to clean (delete /target folder): <br>
+clj -X:build clean <br>
+
+to run .jar application first time:<br>
+java -jar adj2dot.jar --help  ( -h  for usage details)

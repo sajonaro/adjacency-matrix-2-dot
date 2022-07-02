@@ -1,6 +1,12 @@
 {
  :paths ["src"]
  :deps {net.mikera/core.matrix {:mvn/version "0.62.0"}
-        org.clojure/clojure    {:mvn/version "1.11.1"}}
- :aliases {:run  {:exec-fn adjacency/-main}
-           :repl {:extra-deps { nrepl/nrepl {:mvn/version "0.6.0"}}}}}
+        org.clojure/clojure    {:mvn/version "1.11.1"}
+        org.clojure/tools.cli  {:mvn/version "1.0.206"}}
+ :aliases {:run   {:exec-fn adjacency/-main}
+           :repl  {:extra-deps { nrepl/nrepl {:mvn/version "0.6.0"}}}
+           :build {:deps {io.github.clojure/tools.build {:git/tag "v0.8.3" :git/sha "0d20256"}}
+                   :exec-fn uber
+                   :ns-default build
+                   :paths ["."]}}}
+   
