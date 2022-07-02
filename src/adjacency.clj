@@ -21,8 +21,8 @@
         "Usage: adj2dot [options] "
         ""
         "Options:"
-        "  -m or --matrix      Start a new server"
-        "  -h or --help        Stop an existing server"
+        "  -m or --matrix      adjacency matrix defined as clojure vector e.g [[1 0] [0 1]]"
+        "  -h or --help        usage help"
         ""
         "Please refer to the manual page for more information."]
        (string/join \newline)))
