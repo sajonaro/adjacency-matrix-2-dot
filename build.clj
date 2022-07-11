@@ -1,10 +1,10 @@
 (ns build
-(:require [clojure.tools.build.api :as b]))
+ (:require [clojure.tools.build.api :as b]))
 
 (def lib 'adj2dot)
 (def class-dir "target/classes")
 (def basis (b/create-basis {:project "deps.edn"}))
-(def uber-file (format "target/%s.jar" (name lib) ))
+(def uber-file (format "target/%s.jar" (name lib)))
 
 (defn clean [_]
   (b/delete {:path "target"}))
